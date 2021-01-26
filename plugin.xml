@@ -39,10 +39,11 @@
       <uses-permission android:name="android.permission.RECORD_AUDIO" />
       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
-
+    <!--#if INCLUDE_ACTIVITY -->
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <activity android:name="com.cordovaplugincamerapreview.CameraActivity" android:screenOrientation="portrait" android:theme="@style/CameraPreviewTheme" />
     </config-file>
+    <!--#endif-->
   </platform>
 
   <platform name="ios">
